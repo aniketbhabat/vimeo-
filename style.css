@@ -7,11 +7,15 @@
 body{
     -webkit-font-smoothing: antialiased;
     color: #1a2e3a;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font: 15px helvetica neue , helvetica,Arial, Helvetica, sans-serif ;
     font-size: 16px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    background-color: #fff;
+}
+body::hover{
+    cursor: auto;
 }
 header{
     display:flex;
@@ -91,8 +95,10 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 50px;
 }
 .grid-3-up .col {
+    font: 15px helvetica neue , helvetica,Arial, Helvetica, sans-serif ;
     flex: 1 1 31%;
     margin-right: 30px;
     max-width: 32%;
@@ -112,6 +118,9 @@ header{
     background-size: cover;
     width: 100%;
     height: 275px;
+}
+.col{
+    font-size: 0px;
 }
 
 .story-card__link {
@@ -148,11 +157,6 @@ header{
     background: 0 0;
     text-shadow: .03em 0 transparent,-.03em 0 transparent,0 .03em transparent,0 -.03em transparent,.06em 0 transparent,-.06em 0 transparent,.09em 0 transparent,-.09em 0 transparent,.12em 0 transparent,-.12em 0 transparent,.15em 0 transparent,-.15em 0 transparent
 }
-
-.story-card__link:hover .story-card__title span *,.story-card__link:hover .story-card__title span :after,.story-card__link:hover .story-card__title span :before,.story-card__link:hover .story-card__title span:after,.story-card__link:hover .story-card__title span:before {
-    text-shadow: none;
-}
-
 .story-card__link:hover .story-card__title span:visited {
     color: #000;
 }
@@ -348,6 +352,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     position: relative
+    curser:pointer;
 }
 
 .upsell__content {
@@ -548,6 +553,16 @@ header{
     }
 }
 
+
+
+
+
+.newsletter-callout{
+    background-color: #f6f6f6;
+}
+
+
+
 .newsletter-callout .form__message {
     opacity: 0;
 }
@@ -589,4 +604,125 @@ header{
         margin-right: auto;
         max-width: 415px;
     }
+}
+.form-control {
+    color: #adb6ba;
+    display: block;
+    font-size: 16px;
+    line-height: 1.625;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: border-bottom-color .2s ease,color .2s ease;
+    width: 100%;
+}
+.newsletter-callout .form-control {
+    background-color: #ffffff;
+    background-position: 97%;
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    border: 0;
+    width: 450;
+    height: 50px;
+    padding-left: 14px;
+    padding-right: 40px;
+}
+button, input {
+    overflow: visible;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.newsletter-callout .email-form small {
+    color: #9f9f9f;
+    display: inline-block;
+    line-height: 1.4;
+    margin-top: 15px;
+    width: 80%;
+}
+.newsletter-callout .email-form small {
+    color: #9f9f9f;
+    display: inline-block;
+    line-height: 1.4;
+    margin-top: 15px;
+    width: 80%;
+}
+.newsletter-callout .form-button {
+    background-color: #1a2e3a;
+    border-radius: 2px;
+    color: #fff;
+    display: table;
+    font-size: 14px;
+    height: 50px;
+    line-height: 1;
+    margin: 22px auto 0;
+    padding: 15px 40px;
+    width: auto;
+}
+.newsletter-callout .form-button {
+    background-color: #1a2e3a;
+    border-radius: 2px;
+    color: #fff;
+    display: table;
+    font-size: 14px;
+    height: 20px;
+    line-height: 1;
+    margin: 22px auto 0;
+    padding: 15px 40px;
+    width: auto;
+}
+.form-button {
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+}
+.newsletter-callout .email-form small {
+    color: #9f9f9f;
+    display: inline-block;
+    line-height: 1.4;
+    margin-top: 15px;
+    width: 80%;
+    font-size: 12.8px;
+    font-size: helvetica neue , helvetica,Arial, Helvetica, ;
+}
+small {
+    font-size: 80%;
+}
+.newsletter-callout .email-form small a {
+    color: #8699a6;
+}
+a {
+    background-color: transparent;
+}
+footer{
+    
+    background-color: #1a2e3a;
+    padding: 70px 0px 40px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+
+}
+.vimeo-wordmark1{
+    width: 50%;
+    margin-left: 15px;
+}
+.footer-section-nav{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    
+    margin-right: 100px;
+}
+.footer-section-nav a{
+    margin-top: 7px;
+    font-size: 15px;
+    font-family: helvetica neue , helvetica,Arial, Helvetica, ;
+}
+.footer-corp{
+    background-color: #1a2e3a;
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
 }
